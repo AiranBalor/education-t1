@@ -1,14 +1,19 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-group = 'ru.t1.education'
+group = 'com.mvvm'
 version = '1.0.0'
 
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
     }
+}
+
+application {
+    mainClass = 'com.mvvm.demo.DemoApp'
 }
 
 repositories {
